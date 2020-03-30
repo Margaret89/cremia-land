@@ -1,0 +1,90 @@
+/*-------------- slick -----------------*/
+.slick-arrow{
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	background: rgba(0, 0, 0, 0.3);
+	border: 0;
+	outline: 0;
+	border-radius: 5px;
+	box-shadow: none;
+	font-size: 0;
+	position: absolute;
+	@include top-center;
+	cursor: pointer;
+	z-index: 1;
+	transition: all 0.3s ease 0s;
+}
+
+.slick-arrow:hover{background: rgba(0, 0, 0, 0.5);}
+
+.slick-arrow::after{
+	content: '';
+	display: inline-block;
+	width: 12px;
+	height: 22px;
+	position: absolute;
+	@include top-center;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.slick-prev{left: -50px}
+.slick-next{right: -50px}
+
+.slick-prev::after{
+	background: url(#{$path-img}/arr-slider-prev.svg) no-repeat center;
+	background-size: contain;
+}
+
+.slick-next::after{
+	background: url(#{$path-img}/arr-slider-next.svg) no-repeat center;
+	background-size: contain;
+}
+
+.slick-arrow.slick-disabled{opacity: 0;}
+
+.slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	bottom: -23px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+
+	li{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	li:not(:last-child){
+		margin-right: 8px;
+	}
+
+	button{
+		display: inline-block;
+		vertical-align: middle;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: transparent;
+		padding: 0;
+		margin: 0;
+		font-size: 0;
+		border: 2px solid #c4c4c4;
+		outline: 0;
+		transition: background 0.3s ease 0s;
+	}
+
+	.slick-active button,
+	button:hover{
+		border-color: #464646;
+	}
+}

@@ -1,0 +1,202 @@
+/*-------------- room -----------------*/
+.room-wrap{
+	padding: 58px 0 65px;
+
+	h2,
+	.h2{
+		margin-bottom: 52px;
+	}
+}
+
+.room{
+	margin-bottom: 20px;
+
+	&.opened .room-head{
+		&__switch-text{color: #929292;}
+		&__switch-text::after{border-color: #929292;}
+	}
+
+	&.active .room-head{
+		background: $color-blue; color: #fff;
+
+		&__name,
+		&__switch-text{
+			color: #fff;
+		}
+
+		&__switch-text::after{border-color: #fff;}
+	}
+
+	&.active .room-head-price{
+		&__title{color: rgba(255,255,255,0.5)}
+		&__val{color: #fff;}
+	}
+
+	&.active .input-radio{
+		&__mark{border-color: #fff;}
+		&__mark::after{background: #fff;}
+	}
+}
+
+.room-head{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 9px 26px rgba(0, 0, 0, 0.08);
+	padding: 21px 50px 21px 28px;
+	position: relative;
+
+	&__content{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: calc(100% - 47px);
+	}
+
+	&__info,
+	&__action{
+		display: flex;
+		align-items: center;
+	}
+
+	&__img{
+		display: inline-block;
+		width: 137px;
+		height: 91px;
+		border-radius: 5px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		margin-right: 27px;
+	}
+
+	&__name{
+		@include font(normal, bold, 1.3125rem, 1.3, $color-text);
+		margin-right: 15px;
+	}
+
+	&__switch{
+		min-width: 100px;
+	}
+
+	&__switch-text{
+		@include font(normal, normal, 1.125rem, 1.3, $color-blue);
+		position: relative;
+	}
+
+	&__switch-text::after{
+		content: '';
+		display: inline-block;
+		width: 100%;
+		height: 1px;
+		border-bottom: 1px dashed $color-blue;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.room-head-price{
+	margin-right: 42px;
+
+	&__title{
+		@include font(normal, normal, 1rem, 1.3, #929292);
+	}
+
+	&__val{
+		@include font(normal, normal, 1.125rem, 1.3, $color-text);
+	}
+}
+
+.room-content{
+	display: none;
+	background: #fff;
+	box-shadow: 0px 9px 26px rgba(0, 0, 0, 0.08);
+	border-radius: 0 0 5px 5px;
+	padding: 44px 23px 23px;
+
+	.gallery-slider{
+		width: calc(100% - 182px);
+		margin: 0 auto;
+	}
+}
+
+.room-param{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-left: -15px;
+	margin-right: -15px;
+
+	&__item{
+		display: flex;
+		align-items: center;
+		max-width: 240px;
+		margin: 0 15px 20px;
+	}
+
+	&__icon{
+		width: 60px;
+		margin-right: 12px;
+	}
+
+	&__text{
+		width: calc(100% - 72px);
+		@include font(normal, normal, 1rem, 1.3, #464646);
+	}
+}
+
+.room-fields{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 780px;
+	margin: 35px auto 0;
+
+	&__item{
+		width: calc(33.33% - 20px);
+		margin: 0 10px 20px;
+	}
+
+	&__input{
+		input[type="text"],
+		input[type="email"]{
+			height: 4.0625rem;
+			width: 100%;
+			outline: none;
+			border: 0;
+			border-radius: 5px;
+			@include font(normal, 300, 1.0625rem, 4.0625rem, $color-text);
+			padding: 0 28px;
+			margin: 0;
+			box-shadow: none;
+		}
+
+		input[type="text"]:focus,
+		input[type="email"]:focus{
+			box-shadow: none;
+		}
+
+		input[type="text"]::placeholder,
+		input[type="email"]::placeholder{
+			color: #929292;
+		}
+	}
+
+	.form-date{width: 100%;}
+
+	.btn,
+	input[type="submit"].btn,
+	button.btn{
+		width: calc(33.33% - 20px);
+		margin: 0 10px 20px;
+	}
+}
+
+.room-polit{
+	text-align: center;
+	margin-top: 7px;
+}

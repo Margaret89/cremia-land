@@ -1,0 +1,51 @@
+/*-------------- review -----------------*/
+.review-wrap{
+	padding: 53px 0 90px;
+
+	h2,
+	.h2{
+		margin-bottom: 30px;
+	}
+}
+
+
+.review-slider{
+	margin-bottom: 20px;
+
+	&__item{
+		min-height: 320px;
+		border: 3px solid #c4c4c4;
+		border-radius: 5px;
+		padding: 32px 32px 28px
+	}
+
+	&__text{
+		@include font(normal, 300, 1.125rem, 1.3, $color-text);
+		margin-bottom: 48px;
+	}
+
+	&__img{
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+
+		img{
+			margin: 15px;
+		}
+	}
+
+	.slick-prev{left: -64px;}
+	.slick-next{right: -64px;}
+	.slick-dots{bottom: -43px;}
+}
+
+.b-readmore{
+	position: absolute;
+	padding: 12px 0 0 0;
+
+	&__link{
+		@include font(normal, 300, 1.0625rem, 1.3, $color-blue);
+	}
+
+	&__link:hover{color: $color-blue;}
+}

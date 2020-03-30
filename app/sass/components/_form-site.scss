@@ -1,0 +1,47 @@
+/*-------------- form-site -----------------*/
+.form-site{
+	&__content{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__field{
+		width: 229px;
+		margin-right: 28px;
+	}
+
+	input[type="text"],
+	input[type="email"]{
+		height: 4.0625rem;
+		width: 100%;
+		outline: none;
+		border: 0;
+		border-radius: 5px;
+		@include font(normal, 300, 1.0625rem, 4.0625rem, $color-text);
+		padding: 0 28px;
+		margin: 0;
+		box-shadow: none;
+	}
+
+	input[type="text"]:focus,
+	input[type="email"]:focus{
+		box-shadow: none;
+	}
+
+	input[type="text"]::placeholder,
+	input[type="email"]::placeholder{
+		color: #929292;
+	}
+
+	.btn,
+	input[type="submit"].btn,
+	button.btn{
+		min-width: 208px;
+	}
+
+	&__polit{
+		text-align: center;
+		margin-top: 27px;
+	}
+}

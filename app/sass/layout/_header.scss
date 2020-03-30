@@ -1,0 +1,60 @@
+/*-------------- Header -----------------*/
+.header{
+	background: url(#{$path-img}/bg-header.jpg) no-repeat center;
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 33px 0 38px;
+}
+
+.header-top{
+	color: #fff;
+
+	&__address{
+		@include font(normal, normal, 1.0625rem, 1.3, #fff);
+	}
+
+	&__contact{
+		text-align: right;
+	}
+
+	&__contact-label{
+		@include font(normal, normal, 0.9375rem, 1.3, rgba(255,255,255,0.7));
+	}
+
+	&__phone,
+	&__phone a{
+		@include font(normal, bold, 1.375rem, 1.3, #fff);
+		text-decoration: none;
+		transition: all 0.3s ease 0s;
+	}
+
+	&__phone a:hover{color: $color-orange;}
+}
+
+.header-info{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 92px 0 128px;
+
+	&__head{
+		padding: 9px 35px;
+		background: #fff;
+		box-shadow: 0px 3px 19px rgba(0, 0, 0, 0.24);
+		border-radius: 5px;
+		@include font(normal, bold, 3.75rem, 1.3, $color-blue);
+	}
+
+	&__address{
+		padding: 14px 35px;
+		background: #eee;
+		border-radius: 5px;
+		@include font(normal, normal, 1.875rem, 1.3, #585B62);
+		margin-top: 18px;
+	}
+
+	.btn{
+		margin-top: 48px;
+	}
+}

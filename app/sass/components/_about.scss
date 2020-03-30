@@ -1,0 +1,19 @@
+/*-------------- about -----------------*/
+.about{
+	padding: 70px 0 58px;
+
+	h2,
+	.h2{
+		max-width: 815px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__img{
+		margin-top: 4px;
+	}
+
+	&__text{
+		@include font(normal, 300, 1.25rem, 1.3, $color-text);
+	}
+}

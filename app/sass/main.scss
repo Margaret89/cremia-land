@@ -1,0 +1,28 @@
+@import 'utils/variables';
+@import 'utils/fonts';
+@import "utils/mixins";
+
+/*-------------- base style -----------------*/
+
+@import 'base/base';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+// /*-------------- Components styles -----------------*/
+@import 'components/search-hotel';
+@import 'components/about';
+@import 'components/params';
+@import 'components/profile';
+@import 'components/slick';
+@import 'components/services';
+@import 'components/gallery';
+@import 'components/advant';
+@import 'components/input-radio';
+@import 'components/input-check';
+@import 'components/room';
+@import 'components/select';
+@import 'components/review';
+@import 'components/form-site';
+@import 'components/booking';
+@import 'components/map';

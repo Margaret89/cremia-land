@@ -1,0 +1,48 @@
+/*-------------- input-check -----------------*/
+.input-check{
+	&__label{
+		display: inline-flex;
+		align-items: center;
+		cursor: pointer;
+		position: relative;
+		margin-bottom: 0;
+	}
+
+	input[type=checkbox] {
+		display: none;
+	}
+
+	&__mark{
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		border: 1px solid #464646;
+		position: relative;
+	}
+
+	&__text{
+		max-width: calc(100% - 24px);
+		@include font(normal, normal, 1rem, 1.3, #464646);
+		margin-left: 12px;
+
+		a{color: #464646}
+	}
+
+	input[type=checkbox]:checked + &__label &__mark:after{
+		content: "";
+		display: inline-block;
+		width: 8px;
+		height: 6px;
+		background: url(#{$path-img}/ic-check.svg) no-repeat center;
+		background-size: contain;
+		position: absolute;
+		@include top-center;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+
+	&_white &__mark{border-color: #fff;}
+	&_white input[type=checkbox]:checked + &__label &__mark:after{background-image: url(#{$path-img}/ic-check-white.svg);}
+	&_white &__text, &_white a{color: #fff;}
+}

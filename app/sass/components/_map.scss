@@ -1,0 +1,29 @@
+/*-------------- map -----------------*/
+.map-wrap{
+	position: relative;
+
+	&__address{
+		display: table;
+		max-width: 90%;
+		padding: 53px 73px;
+		@include font(normal, 300, 1.5625rem, 1.3, #484848);
+		background: rgba(255,255,255,0.7);
+		position: absolute;
+		top: 40px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		z-index: 10;
+	}
+}
+
+.map{
+	width: 100%;
+	height: 484px;
+}
+
+@media (max-width: 767px) {
+	.map{
+		height: 300px;
+	}
+}
