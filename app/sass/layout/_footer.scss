@@ -68,6 +68,43 @@
 .pay-system{
 	display: inline-flex;
 	align-items: center;
+	flex-wrap: wrap;
 
 	&__item:not(:last-child){margin-right: 13px;}
+}
+
+@media (max-width: 767px) {
+	.footer-top{
+		&__content{
+			display: block;
+		}
+
+		&__contact{
+			display: block;
+			margin-top: 20px;
+		}
+
+		&__address,
+		&__phone{
+			margin-left: 0;
+			margin-right: 0;
+			margin-bottom: 10px;
+			text-align: left;
+		}
+	}
+
+	.footer-top-phone{text-align: left;}
+
+	.footer-bottom{
+		&__content{display: block;}
+
+		.pay-system{
+			margin-top: 20px;
+
+			&__item{
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+		}
+	}
 }

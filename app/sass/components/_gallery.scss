@@ -21,10 +21,19 @@
 	&__item{
 		display: inline-block;
 		margin: 20px 15px;
+		text-align: center;
 
 		img{
 			border-radius: 5px;
 			box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.08);
 		}
+	}
+}
+
+@media (max-width: 767px) {
+	.gallery-wrap{padding: 50px 0 58px;}
+
+	.gallery-slider{
+		&__item > a{display: inline-block;}
 	}
 }

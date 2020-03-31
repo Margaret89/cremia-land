@@ -45,3 +45,16 @@
 
 a.params__val:hover{color: $color-orange;}
 a.params__val:hover::after{border-color: $color-orange;}
+
+@media (max-width: 767px) {
+	.params-wrap{padding: 50px 0 40px;}
+
+	.params{
+		flex-wrap: wrap;
+
+		&__item{
+			width: 50%;
+			max-width: 50%;
+		}
+	}
+}

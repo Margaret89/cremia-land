@@ -128,7 +128,6 @@
 
 .room-param{
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 	width: 100%;
@@ -139,7 +138,7 @@
 		display: flex;
 		align-items: center;
 		max-width: 240px;
-		margin: 0 15px 20px;
+		margin: 0 25px 20px;
 	}
 
 	&__icon{
@@ -202,4 +201,92 @@
 .room-polit{
 	text-align: center;
 	margin-top: 7px;
+
+	.input-check__text{text-align: left;}
+}
+
+@media (max-width: 991px) {
+	.room-head-price{
+		margin-right: 20px;
+	}
+
+	.list-room-popup{
+		padding-left: 10px;
+		padding-right: 10px;
+
+		.room-fields__item{width: calc(50% - 20px);}
+	}
+}
+
+@media (max-width: 767px) {
+	.room-wrap{padding: 50px 0;}
+
+	.room-head{
+		padding: 20px 15px;
+
+		&__content,
+		&__info,
+		&__action{
+			display: block;
+		}
+
+		&__img,
+		&__name{
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+
+		&__switch{
+			text-align: right;
+			margin-top: 20px;
+		}
+	}
+
+	.room-head-price{margin-right: 0;}
+	.room-content{
+		padding: 40px 15px 20px;
+
+		.gallery-slider{
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+
+	.room-param{
+		&__item{
+			max-width: 100%;
+			width: calc(50% - 30px);
+			margin: 0 15px 20px;
+		}
+	}
+
+	.room-fields{
+		&__item{
+			width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.btn,
+		input[type="submit"].btn,
+		button.btn{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.list-room-popup{
+		.room-head{display: block;}
+		.room-fields__item{
+			width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+}
+
+@media (max-width: 479px) {
+	.room-param{
+		&__item{width: calc(100% - 30px);}
+	}
 }

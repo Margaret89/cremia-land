@@ -7,6 +7,7 @@
 		max-width: 90%;
 		padding: 53px 73px;
 		@include font(normal, 300, 1.5625rem, 1.3, #484848);
+		text-align: center;
 		background: rgba(255,255,255,0.7);
 		position: absolute;
 		top: 40px;
@@ -23,6 +24,13 @@
 }
 
 @media (max-width: 767px) {
+	.map-wrap{
+		&__address{
+			padding: 20px 15px;
+			font-weight: normal;
+			font-size: 1.25rem;
+		}
+	}
 	.map{
 		height: 300px;
 	}

@@ -9,6 +9,30 @@ $(document).ready(function () {
 			slidesToShow: 3,
 			slidesToScroll: 1,
 			dots: true,
+			arrows: true,
+			responsive: [
+			{
+				breakpoint: 1100,
+				settings: {
+					slidesToShow: 3,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+				}
+			},
+			]
 		});
 	}
 
@@ -18,6 +42,45 @@ $(document).ready(function () {
 			infinite: true,
 			slidesToShow: 4,
 			slidesToScroll: 1,
+			arrows: true,
+			dots: false,
+			responsive: [
+			{
+				breakpoint: 1100,
+				settings: {
+					slidesToShow: 4,
+					arrows: false,
+					dots: false,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					arrows: false,
+					dots: true,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					arrows: false,
+					dots: true,
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+					dots: true,
+				}
+			},
+			]
 		});
 	}
 
@@ -40,6 +103,25 @@ $(document).ready(function () {
 						infinite: false,
 						slidesToShow: 3,
 						slidesToScroll: 1,
+						arrows: true,
+						dots: false,
+						responsive: [
+						{
+							breakpoint: 992,
+							settings: {
+								slidesToShow: 2,
+								dots: false,
+							}
+						},
+						{
+							breakpoint: 768,
+							settings: {
+								slidesToShow: 1,
+								arrows: false,
+								dots: true,
+							}
+						},
+						]
 					});
 				}
 			}else{
@@ -121,6 +203,15 @@ $(document).ready(function () {
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			dots: true,
+			arrows: true,
+			responsive: [
+			{
+				breakpoint: 1100,
+				settings: {
+					arrows: false,
+				}
+			},
+			]
 		});
 	}
 

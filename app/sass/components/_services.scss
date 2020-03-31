@@ -56,3 +56,18 @@
 		margin-top: 12px;
 	}
 }
+
+@media (max-width: 767px) {
+	.service-wrap{
+		padding: 50px 0 40px;
+
+		h2, .h2{margin-bottom: 25px;}
+	}
+
+
+	.service-slider{
+		&__item{
+			min-height: auto;
+		}
+	}
+}

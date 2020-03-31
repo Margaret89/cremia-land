@@ -63,3 +63,20 @@
 	&.opened &__switch-text{color: #929292;}
 	&.opened &__switch-text::after{border-color: #929292;}
 }
+
+@media (max-width: 767px) {
+	.unwrap{
+		&__head{
+			display: block;
+			padding: 20px 15px;
+		}
+
+		&__name{
+			margin-right: 0;
+			margin-bottom: 5px;
+		}
+
+		&__switch{text-align: right;}
+		&__content{padding: 26px 20px 15px;}
+	}
+}

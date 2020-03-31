@@ -157,3 +157,33 @@ button.btn_big{
 // 	max-height: 90%;
 // 	@include top-center;
 // }
+
+@media (max-width: 767px) {
+	html,
+	body{
+		font-size: 14px;
+	}
+
+	.container{width: 100%!important;}
+
+	.btn_big,
+	input[type="submit"].btn_big,
+	button.btn_big{
+		font-size: 1.5rem;
+		height: 4.5rem;
+		line-height: 4.5rem;
+		min-width: 260px;
+	}
+
+	h2, .h2{font-size: 2rem}
+	p{font-size: 1.14rem;}
+
+	.fancybox-content{padding: 40px 15px 20px;}
+	.fancybox-slide--image .fancybox-content{
+		max-width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+	}
+}

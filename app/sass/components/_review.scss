@@ -49,3 +49,18 @@
 
 	&__link:hover{color: $color-blue;}
 }
+
+@media (max-width: 767px) {
+	.review-wrap{
+		padding: 45px 0 60px;
+	}
+
+	.review-slider{
+		&__item{padding: 20px 15px 15px;}
+		&__img{margin: 0 -10px;}
+		&__img img{
+			width: calc(50% - 20px);
+			margin: 10px;
+		}
+	}
+}

@@ -43,5 +43,27 @@
 	&__polit{
 		text-align: center;
 		margin-top: 27px;
+
+		.input-check__text{
+			text-align: left;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.form-site{
+		&__content{display: block;}
+		&__field{
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+
+		.btn,
+		input[type="submit"].btn,
+		button.btn{
+			display: table;
+			margin: 0 auto;
+		}
 	}
 }
