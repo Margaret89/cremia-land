@@ -67,6 +67,17 @@ h6,
 	margin-bottom: 0;
 }
 
+ul{padding-left: 14px;}
+
+ul,
+ol{
+	margin-top: 18px;
+}
+
+li{
+	margin-bottom: 5px;
+}
+
 .wrapper{
 	display: flex;
 	flex-direction: column;
@@ -141,3 +152,8 @@ button.btn_big{
 .h-text-justify{text-align: justify !important;}
 .h-text-uppercase{text-transform: uppercase !important;}
 .h-text-bold {font-weight: 700 !important;}
+
+// .fancybox-slide--html{
+// 	max-height: 90%;
+// 	@include top-center;
+// }

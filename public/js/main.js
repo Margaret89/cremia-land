@@ -36,7 +36,6 @@ $(document).ready(function () {
 				$parent.children('.js-room-content').slideDown(400);
 
 				if(!$parent.find('.js-gallery-slider-room').hasClass('slick-initialized')){
-					console.log('222');
 					$parent.find('.js-gallery-slider-room').slick({
 						infinite: false,
 						slidesToShow: 3,
@@ -65,6 +64,26 @@ $(document).ready(function () {
 				$parent.addClass('active');
 			}else{
 				$parent.removeClass('active');
+			}
+		});
+	}
+
+// Раскрывающийся блок
+	if ($('.js-unwrap-switch').length) {
+		$('.js-unwrap').on('click','.js-unwrap-switch',function(event){
+			event.preventDefault();
+			var $parent = $(this).parents('.js-unwrap');
+			var tempTextSwitch = $(this).text();
+
+			$parent.toggleClass('opened');
+			$(this).text($(this).data('switch'));
+			$(this).data('switch',tempTextSwitch);
+
+			if($parent.hasClass('opened')){
+				$parent.children('.js-unwrap-content').slideDown(400);
+			}else{
+				$parent.children('.js-unwrap-content').slideUp(400);
+				
 			}
 		});
 	}
